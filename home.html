@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming Verse | Home</title>
+    <link rel="stylesheet" href="style.css">
+    
+<script>
+let role = localStorage.getItem("gv_role");
+if (!role) window.location.href = "auth.html";
+</script>
+
+
+</head>
+<body>
+    <video autoplay muted loop class="bg-video">
+    <source src="bg-video.mp4" type="video/mp4">
+</video>
+
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">🎮 Gaming Verse</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="game.html">Games</a>
+            <a href="esport.html">Esports</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+            <a href="auth.html">Login</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Gaming Verse</h2>
+        <p>Where legends are born and noobs rage quit 😈</p>
+        <div class="hero-buttons">
+            <button class="btn">Explore Games</button>
+            <button class="btn outline">Join Community</button>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured">
+        <h2>🔥 Featured Games</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Valorant</h3>
+                <p>Tactical FPS action</p>
+            </div>
+
+            <div class="card">
+                <h3>GTA VI</h3>
+                <p>Open world chaos</p>
+            </div>
+
+            <div class="card">
+                <h3>Call of Duty</h3>
+                <p>Fast paced warfare</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Gaming Verse -->
+    <section class="why-us">
+        <h2>Why Gaming Verse?</h2>
+        <p>
+            News, reviews, esports updates, and a community
+            that actually knows how to aim.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Gaming Verse | Powered by Gamers</p>
+    </footer>
+
+</body>
+</html>

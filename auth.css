@@ -1,0 +1,60 @@
+body {
+    background: linear-gradient(135deg, #020617, #1e293b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.auth-container {
+    background-color: #020617;
+    padding: 40px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #38bdf8;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#error {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards, .stats, .team-grid {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+}

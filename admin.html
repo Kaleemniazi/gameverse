@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <script defer src="admin.js"></script>
+    <script>
+if (localStorage.getItem("gv_role") !== "admin") {
+    window.location.href = "auth.html";
+}
+</script>
+
+</head>
+<body>
+    <h2>🧠 Admin Dashboard</h2>
+
+<canvas id="userChart" width="400" height="200"></canvas>
+
+<div class="panel neon">
+    <p id="totalUsers"></p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="admin.js"></script>
+
+
+<h2>🧠 Admin Panel</h2>
+
+<div class="panel neon">
+    <p id="adminName"></p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+</body>
+</html>
